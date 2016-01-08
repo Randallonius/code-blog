@@ -3,27 +3,19 @@ body {
   background-color: #FFFF66;
 }
 /* Header Section */
-header {
+#main-header {
   height: 200px;
   background-color: #5a5a5a;
 }
 
-#title {
-  display: flex;
-  flex-direction: column;
-  margin-left: 30px;
-  padding-top: 10px;
-}
 #title h1 {
   font-family: 'Monda', sans-serif;
   margin-bottom: 0px;
   color: #FFFF66;
-  text-shadow: 1px 1px #000;
 }
 #title h2 {
   font-family: 'Josefin Slab', serif;
   font-size: 1.2em;
-  margin-top: 0px;
 }
 nav ul{
   display: flex;
@@ -36,6 +28,10 @@ nav li {
   font-weight: 700;
 }
 
+.template {
+  display: none;
+  width: 200px;
+}
 /* Main Section of Blog */
 
 /* Footer */
