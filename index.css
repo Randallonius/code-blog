@@ -39,7 +39,9 @@ nav li {
 }
 
 /* Main Section of Blog */
-
+img {
+  max-width: 100%;
+}
 #project-header {
   display: flex;
   justify-content: center;
@@ -55,6 +57,7 @@ nav li {
 .indv-port {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
   justify-content: space-around;
   color: #DDD;
 }
@@ -76,6 +79,7 @@ nav li {
   background-color: #5a5a5a;
   margin: 10px auto;
   padding: 1px 5px 1px 5px;
+  letter-spacing: 1px;
 }
 .arrow {
   display: flex;
@@ -89,3 +93,7 @@ i {
   margin: o auto;
 }
 /* Footer */
+/*Media Queries*/
+@media and (max-width: 950px) {
+
+}
