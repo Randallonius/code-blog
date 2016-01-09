@@ -13,11 +13,14 @@ Sites.prototype.toHtml = function() {
   var $newProject = $('div.template').clone();
   $newProject.find('h1').text(this.title);
   $newProject.find('a').attr('href', this.projectUrl);
+  $newProject.find('#project-image').attr('src', this.projectImg);
   $newProject.find('.project-body').html(this.body);
 
   $newProject.removeClass('template');
+
   return $newProject;
 };
+
 
 projects.forEach(function(ele) {
   portfolio.push(new Sites(ele));
@@ -25,4 +28,10 @@ projects.forEach(function(ele) {
 
 portfolio.forEach(function(a){
   $('#portfolio').append(a.toHtml());
+});
+
+$(document).ready(function() {
+  $('i').click(function() {
+    $('.project-body').slideToggle('slow');
+  });
 });
