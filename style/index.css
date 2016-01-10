@@ -26,25 +26,36 @@ body {
   text-align: center;
 }
 nav {
-display: flex;
-}
-#menu {
   display: flex;
-  padding-left: 20px;
+  justify-content: space-between;
+  align-items: baseline;
   border-bottom: 1px solid #5a5a5a;
 }
+ul li{
+  display: inline;
+}
 nav li {
-  padding: 10px;
+  display: inline
+
   list-style: none;
   font-family: 'Josefin Slab', serif;
   color: #5a5a5a;
   font-weight: 700;
 }
 
-#social-media {
-  display: flex;
+ul.menu {
+  padding-left: 30px;
+}
+ul.menu li {
+  padding: 10px;
+}
+ul.social-media {
+  padding-right: 30px;
 }
 
+ul.social-media li {
+  padding: 10px;
+}
 /* Main Section of Blog */
 img {
   max-width: 100%;
