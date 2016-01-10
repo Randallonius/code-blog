@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #333333;
 }
 /* Header Section */
@@ -24,9 +25,11 @@ body {
   font-size: 1.2em;
   text-align: center;
 }
-nav ul{
+nav {
+display: flex;
+}
+#menu {
   display: flex;
-  justify-content: center;
   padding-left: 20px;
   border-bottom: 1px solid #5a5a5a;
 }
@@ -36,6 +39,10 @@ nav li {
   font-family: 'Josefin Slab', serif;
   color: #5a5a5a;
   font-weight: 700;
+}
+
+#social-media {
+  display: flex;
 }
 
 /* Main Section of Blog */
@@ -84,6 +91,10 @@ img {
 .arrow {
   display: flex;
   justify-content: center;
+}
+
+.up {
+  transform: rotate(.5turn);
 }
 i {
   display: flex;

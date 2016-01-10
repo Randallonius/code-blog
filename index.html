@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Raleway:300|Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style/index.css">
 </head>
   <body>
     <main>
@@ -16,26 +16,32 @@
         </div>
       </header>
         <nav>
-          <ul>
+          <ul class="menu">
             <li>Home</li>
             <li>About</li>
+          </ul>
+          <ul class="social-media">
+            <li><i class="fa fa-facebook fa-2x"></i></li>
+            <li><i class="fa fa-linkedin fa-2x"></i>LinkedIn</li>
+            <li><i class="fa fa-linkedin fa-2x"></i>Github</li>
           </ul>
         </nav>
         <h1 id="project-header">Personal Projects</h1>
         <section id="portfolio" class="indv-port">
-        <div class="template">
+        <div class="template" data-id="123">
             <header>
               <h1>Title</h1>
             </header>
             <a href""><img id="project-image"></a>
             <section class="project-body"></section>
+            <time pubdate datetime="2000-01-01">Published On</time>
             <div class="arrow"><i class="fa fa-chevron-down fa-2x"></i></div>
           </div>
         </section>
   </main>
   <footer></footer>
-  <script src="jquery-1.11.3.js"></script>
-  <script src="portfolioEntries.js"></script>
-  <script src="portfolio.js"></script>
+  <script src="scripts/jquery-1.11.3.js"></script>
+  <script src="scripts/portfolioEntries.js"></script>
+  <script src="scripts/portfolio.js"></script>
   </body>
 </html>

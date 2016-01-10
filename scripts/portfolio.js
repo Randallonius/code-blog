@@ -15,12 +15,14 @@ Sites.prototype.toHtml = function() {
   $newProject.find('a').attr('href', this.projectUrl);
   $newProject.find('#project-image').attr('src', this.projectImg);
   $newProject.find('.project-body').html(this.body);
-
   $newProject.removeClass('template');
 
   return $newProject;
 };
 
+portfolio.sort(function(a,b) {
+  return(new Date(b.publishedOn)) - (new Date(a.publishedOn));
+});
 
 projects.forEach(function(ele) {
   portfolio.push(new Sites(ele));
@@ -30,8 +32,16 @@ portfolio.forEach(function(a){
   $('#portfolio').append(a.toHtml());
 });
 
-$(document).ready(function() {
-  $('i').click(function() {
-    $('.project-body').slideToggle('slow');
+$(function() {
+  $('.arrow i').on('click', function(e) {
+    e.preventDefault();
+    $(e.target).parent().parent().find('.project-body').slideToggle('slow');
+    $(this).toggleClass('up');
   });
 });
+
+// $(document).ready(function() {
+//   $('i').click(function() {
+//     $('.project-body').slideToggle('slow');
+//   });
+// });
