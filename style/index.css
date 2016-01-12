@@ -14,19 +14,19 @@ body {
 }
 #title h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 70px;
+  font-size: 7em;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-top: 20px;
   color: #222;
-  text-shadow: 0px 2px 3px #555;
+  text-shadow: 0px 1px 2px #8a8a8a;
   text-align: center;
 }
 #title h2 {
   font-family: 'Josefin Slab', serif;
   font-size: 1.2em;
   color: #222;
-  text-shadow: 0px 2px 3px #555;
+    text-shadow: 0px 1px 2px #8a8a8a;
   text-align: center;
 }
 nav {
@@ -52,6 +52,11 @@ ul.menu {
 }
 ul.menu li {
   padding: 10px;
+  background: #5a5a5a;
+  border-radius: 5px;
+  color: #222;
+  text-shadow: 0px 1px 2px #8a8a8a;
+  text-align: center;
 }
 ul.social-media {
   padding-right: 30px;
@@ -70,16 +75,11 @@ img {
   text-align: center;
   font-family: 'Goudy Bookletter 1911', serif;
   color: #DDD;
+  letter-spacing: 0.1em;
 }
 
-#about-header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Goudy Bookletter 1911', serif;
-  color: #DDD;
-  float: left;
-}
+
+
 .template {
   display: none;
 }
@@ -93,6 +93,7 @@ img {
 }
 .indv-port h1 {
   text-align: center;
+  letter-spacing: 0.1em;
 }
 #project-image {
   display: flex;
@@ -126,15 +127,49 @@ i {
   cursor: pointer;
   margin: o auto;
 }
+#about-me {
+  margin-bottom: 30px;
+}
+#about-me header {
+  display: flex;
+  margin-bottom: 30px;
+}
+.about-header{
+  margin: 0 auto;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: #DDD;
+  font-size: 2em;
+}
+#about-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 #profile-image {
-  float: right;
+  display: flex;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  padding-right: 30px;
+  margin-right: 60px;
+}
+
+#about-body {
+  display: flex;
+  width: 60%;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #DDD;
+  letter-spacing: 0.2em;
+  background-color: #5a5a5a;
+}
+#about-body p {
+  display: block;
 }
 /* Footer */
 /*Media Queries*/
-@media and (max-width: 950px) {
-
+@media and (max-width: 600px) {
+  #about-info {
+    flex-direction: column;
+  }
 }
