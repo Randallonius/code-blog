@@ -1,30 +1,55 @@
+/***********************
+BASE
+******************/
 body {
   margin: 0;
   padding: 0;
   background-color: #333333;
 }
-/* Header Section */
+img {
+  max-width: 100%;
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  cursor: pointer;
+  margin: o auto;
+}
+/***********************
+LAYOUT
+****************/
+
 #main-header {
   height: 200px;
   background-color: #5a5a5a;
 }
-
 #title {
   margin-top: 0;
 }
+/***********************
+MODULE
+****************/
+/*HEADER*/
 #title h1 {
   font-family: 'Raleway', sans-serif;
+  font-size: 7em;
   margin-bottom: 0px;
   margin-top: 0px;
   padding-top: 20px;
-  color: #FFFF66;
+  color: #222;
+  text-shadow: 0px 1px 2px #8a8a8a;
   text-align: center;
 }
 #title h2 {
   font-family: 'Josefin Slab', serif;
   font-size: 1.2em;
+  color: #222;
+    text-shadow: 0px 1px 2px #8a8a8a;
   text-align: center;
 }
+/*NAVIGATION AND MENU*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -35,37 +60,52 @@ ul li{
   display: inline;
 }
 nav li {
-  display: inline
-
+  display: inline;
   list-style: none;
   font-family: 'Josefin Slab', serif;
   color: #5a5a5a;
   font-weight: 700;
 }
+.menu {
+  cursor: pointer;
+    padding-left: 30px;
+}
 
-ul.menu {
-  padding-left: 30px;
-}
-ul.menu li {
+.accordion-control {
   padding: 10px;
+  background: #5a5a5a;
+  border-radius: 5px;
+  color: #222;
+  text-shadow: 0px 1px 2px #8a8a8a;
+  text-align: center;
 }
-ul.social-media {
+.social-media {
   padding-right: 30px;
 }
 
-ul.social-media li {
+.social-media li {
   padding: 10px;
 }
+/***********************
+STATE
+****************/
+
+
+
+
+
+
+
 /* Main Section of Blog */
-img {
-  max-width: 100%;
-}
-#project-header {
+
+.project-header, .about-header {
   display: flex;
   justify-content: center;
   text-align: center;
   font-family: 'Goudy Bookletter 1911', serif;
   color: #DDD;
+  letter-spacing: 0.1em;
+  font-size: 2em;
 }
 
 .template {
@@ -81,6 +121,7 @@ img {
 }
 .indv-port h1 {
   text-align: center;
+  letter-spacing: 0.1em;
 }
 #project-image {
   display: flex;
@@ -107,15 +148,51 @@ img {
 .up {
   transform: rotate(.5turn);
 }
-i {
+/*ABOUT SECTION*/
+/*#about-me {
+  margin-bottom: 30px;
+}*/
+#about-me header {
   display: flex;
-  justify-content: center;
-  color: grey;
-  cursor: pointer;
-  margin: o auto;
+  margin-bottom: 30px;
+}
+{
+  margin: 0 auto;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: #DDD;
+  font-size: 2em;
+}
+#about-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#profile-image {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 60px;
+}
+
+#about-body {
+  display: flex;
+  width: 60%;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #DDD;
+  letter-spacing: 0.2em;
+  background-color: #5a5a5a;
+}
+#about-body p {
+  display: block;
 }
 /* Footer */
 /*Media Queries*/
-@media and (max-width: 950px) {
-
+@media and (max-width: 600px) {
+  #about-info {
+    flex-direction: column;
+  }
 }

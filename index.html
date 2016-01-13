@@ -6,6 +6,18 @@
 <link href='https://fonts.googleapis.com/css?family=Raleway:300|Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="style/index.css">
+
+<script id="dynamic-content" type="text/x-handlebars-template">
+<div>
+    <header>
+      <h1>{{title}}</h1>
+    </header>
+    <a href""><img id="project-image" src="{{projectImg}}"></a>
+    <section class="project-body">{{{body}}}</section>
+    <div class="arrow"><i class="fa fa-chevron-down fa-2x"></i></div>
+  </div>
+  </script>
+
 </head>
   <body>
     <main>
@@ -17,8 +29,8 @@
       </header>
         <nav>
           <ul class="menu">
-            <li>Home</li>
-            <li>About</li>
+            <li class="accordion-control">Home</li>
+            <li class="accordion-control">About</li>
           </ul>
           <ul class="social-media">
             <li><i class="fa fa-facebook fa-2x"></i></li>
@@ -26,21 +38,25 @@
             <li><i class="fa fa-github fa-2x"></i></li>
           </ul>
         </nav>
-        <h1 id="project-header">Personal Projects</h1>
+        <section class="section-control">
+        <h1 class="project-header">Personal Projects</h1>
         <section id="portfolio" class="indv-port">
-        <div class="template" data-id="123">
-            <header>
-              <h1>Title</h1>
-            </header>
-            <a href""><img id="project-image"></a>
-            <section class="project-body"></section>
-            <time pubdate datetime="2000-01-01">Published On</time>
-            <div class="arrow"><i class="fa fa-chevron-down fa-2x"></i></div>
-          </div>
         </section>
+      </section>
+        <section class="section-control">
+                <h1 class="about-header">Hello!</h1>
+              </header>
+              <section id="about-info">
+              <aside><img src="images/jonathan_darth.jpg" alt="Jonathan Randall" id="profile-image" /></aside>
+              <div id="about-body">
+                <p>I originally hail from the state of Michigan. My career background is in Hospitality Management but after many years I decided to take the plunge into the tech industry.<br> Having just moved to Portland Oregon I decided the time was perfect to enroll in Code Fellows where I am currently going through their 301 class.<br> When I am not in school I enjoy spending time with my family enjoying everything that the Pacific Northwest has to offer.</p>
+              </div>
+            </section> <!--about-info-->
+        </section> <!--section-control-->
   </main>
   <footer></footer>
   <script src="scripts/jquery-1.11.3.js"></script>
+  <script src="scripts/handlebars-v4.0.5.js"></script>
   <script src="scripts/portfolioEntries.js"></script>
   <script src="scripts/portfolio.js"></script>
   </body>
