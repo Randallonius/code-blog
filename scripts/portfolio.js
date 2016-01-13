@@ -31,7 +31,7 @@ projects.forEach(function(ele) {
 portfolio.forEach(function(a){
   $('#portfolio').append(a.toHtml());
 });
-
+//Adding moving directional arrow to show project body and to hide it.
 $(function() {
   $('.arrow i').on('click', function(e) {
     e.preventDefault();
@@ -39,9 +39,3 @@ $(function() {
     $(this).toggleClass('up');
   });
 });
-
-// $(document).ready(function() {
-//   $('i').click(function() {
-//     $('.project-body').slideToggle('slow');
-//   });
-// });
