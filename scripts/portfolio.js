@@ -8,16 +8,13 @@ function Sites (opts) {
   this.projectUrl = opts.projectUrl; //Web link to project Page
   this.projectImg = opts.projectImg; //Screen capture of project front page
 }
-
+//populating the template
 Sites.prototype.toHtml = function() {
-  var $newProject = $('div.template').clone();
-  $newProject.find('h1').text(this.title);
-  $newProject.find('a').attr('href', this.projectUrl);
-  $newProject.find('#project-image').attr('src', this.projectImg);
-  $newProject.find('.project-body').html(this.body);
-  $newProject.removeClass('template');
+  var appTemplate = $('#dynamic-content').html();
+  var compiledTemplate = Handlebars.compile(appTemplate);
+  var html = compiledTemplate(this);
 
-  return $newProject;
+  return html;
 };
 
 portfolio.sort(function(a,b) {
@@ -27,7 +24,7 @@ portfolio.sort(function(a,b) {
 projects.forEach(function(ele) {
   portfolio.push(new Sites(ele));
 });
-
+//writing the template to the #portfolio section
 portfolio.forEach(function(a){
   $('#portfolio').append(a.toHtml());
 });
@@ -38,4 +35,9 @@ $(function() {
     $(e.target).parent().parent().find('.project-body').slideToggle('slow');
     $(this).toggleClass('up');
   });
+});
+
+$('.menu').on('click', 'accordion-control', function(e) {
+  e.preventDefault();
+  $(this).next('.section-control').not(':animated').slideToggle();
 });

@@ -29,6 +29,7 @@ body {
     text-shadow: 0px 1px 2px #8a8a8a;
   text-align: center;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -47,6 +48,9 @@ nav li {
   font-weight: 700;
 }
 
+.menu {
+  cursor: pointer;
+}
 ul.menu {
   padding-left: 30px;
 }
@@ -77,8 +81,6 @@ img {
   color: #DDD;
   letter-spacing: 0.1em;
 }
-
-
 
 .template {
   display: none;
