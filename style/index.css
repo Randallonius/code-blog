@@ -1,17 +1,37 @@
+/***********************
+BASE
+******************/
 body {
   margin: 0;
   padding: 0;
   background-color: #333333;
 }
-/* Header Section */
+img {
+  max-width: 100%;
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  cursor: pointer;
+  margin: o auto;
+}
+/***********************
+LAYOUT
+****************/
+
 #main-header {
   height: 200px;
   background-color: #5a5a5a;
 }
-
 #title {
   margin-top: 0;
 }
+/***********************
+MODULE
+****************/
+/*HEADER*/
 #title h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 7em;
@@ -29,7 +49,7 @@ body {
     text-shadow: 0px 1px 2px #8a8a8a;
   text-align: center;
 }
-
+/*NAVIGATION AND MENU*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -40,21 +60,18 @@ ul li{
   display: inline;
 }
 nav li {
-  display: inline
-
+  display: inline;
   list-style: none;
   font-family: 'Josefin Slab', serif;
   color: #5a5a5a;
   font-weight: 700;
 }
-
 .menu {
   cursor: pointer;
+    padding-left: 30px;
 }
-ul.menu {
-  padding-left: 30px;
-}
-ul.menu li {
+
+.accordion-control {
   padding: 10px;
   background: #5a5a5a;
   border-radius: 5px;
@@ -62,24 +79,33 @@ ul.menu li {
   text-shadow: 0px 1px 2px #8a8a8a;
   text-align: center;
 }
-ul.social-media {
+.social-media {
   padding-right: 30px;
 }
 
-ul.social-media li {
+.social-media li {
   padding: 10px;
 }
+/***********************
+STATE
+****************/
+
+
+
+
+
+
+
 /* Main Section of Blog */
-img {
-  max-width: 100%;
-}
-#project-header {
+
+.project-header, .about-header {
   display: flex;
   justify-content: center;
   text-align: center;
   font-family: 'Goudy Bookletter 1911', serif;
   color: #DDD;
   letter-spacing: 0.1em;
+  font-size: 2em;
 }
 
 .template {
@@ -122,21 +148,15 @@ img {
 .up {
   transform: rotate(.5turn);
 }
-i {
-  display: flex;
-  justify-content: center;
-  color: grey;
-  cursor: pointer;
-  margin: o auto;
-}
-#about-me {
+/*ABOUT SECTION*/
+/*#about-me {
   margin-bottom: 30px;
-}
+}*/
 #about-me header {
   display: flex;
   margin-bottom: 30px;
 }
-.about-header{
+{
   margin: 0 auto;
   font-family: 'Goudy Bookletter 1911', serif;
   color: #DDD;
@@ -146,6 +166,7 @@ i {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 #profile-image {
   display: flex;

@@ -8,7 +8,7 @@ function Sites (opts) {
   this.projectUrl = opts.projectUrl; //Web link to project Page
   this.projectImg = opts.projectImg; //Screen capture of project front page
 }
-//populating the template
+//populating the portfolio template
 Sites.prototype.toHtml = function() {
   var appTemplate = $('#dynamic-content').html();
   var compiledTemplate = Handlebars.compile(appTemplate);
