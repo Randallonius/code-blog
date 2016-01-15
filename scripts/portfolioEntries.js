@@ -1,7 +1,7 @@
 var projects = [
   {
     title:       'Early About-Me Page',
-    category:    'HTML',
+    category:    'HTML, CSS',
     publishedOn: '2015-10-22',
     projectUrl:  'http://randallonius.github.io/About-Me/',
     projectImg:  'images/about.jpg',
@@ -9,7 +9,7 @@ var projects = [
   },
   {
     title:       'Donut Shop',
-    category:    'HTML',
+    category:    'HTML, CSS, JavaScript',
     publishedOn: '2015-11-15',
     projectUrl:  'http://randallonius.github.io/Donutshop/donutshop.html',
     projectImg:  'images/donut.jpg',
@@ -17,7 +17,7 @@ var projects = [
   },
   {
     title:       'Musician Vote Tracker',
-    category:    'HTML',
+    category:    'HTML, CSS, JavaScript',
     publishedOn: '2015-12-01',
     projectUrl:  'http://randallonius.github.io/Vote-Tracker/vote.html',
     projectImg:  'images/vote-tracker.png',
@@ -25,7 +25,7 @@ var projects = [
   },
   {
     title:       'Discover Portland',
-    category:    'HTML',
+    category:    'HTML, CSS, JavaScript',
     publishedOn: '2015-12-21',
     projectUrl:  'http://risachi.github.io/travel-project/',
     projectImg:  'images/portland.jpg',
