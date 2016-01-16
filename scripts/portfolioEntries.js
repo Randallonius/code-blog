@@ -27,7 +27,7 @@ var projects = [
     title:       'Discover Portland',
     category:    'HTML, CSS, JavaScript',
     publishedOn: '2015-12-21',
-    projectUrl:  'http://risachi.github.io/travel-project/',
+    projectUrl:  'http://risachi.github.io/travel-project/index.html',
     projectImg:  'images/portland.jpg',
     body:        '<p>It looks so good, I might as well not stop. It just happens - whether or not you worried about it or tried to plan it. Be brave. You have to make these big decisions.</p>'
   },
