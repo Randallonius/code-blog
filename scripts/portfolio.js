@@ -36,8 +36,3 @@ $(function() {
     $(this).toggleClass('up');
   });
 });
-
-$('.menu').on('click', 'accordion-control', function(e) {
-  e.preventDefault();
-  $(this).next('.section-control').not(':animated').slideToggle();
-});

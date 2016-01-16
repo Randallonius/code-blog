@@ -17,6 +17,11 @@ i {
   cursor: pointer;
   margin: o auto;
 }
+
+a {
+  text-decoration: none;
+  color: #222;
+}
 /***********************
 LAYOUT
 ****************/
@@ -71,7 +76,8 @@ nav li {
     padding-left: 30px;
 }
 
-.accordion-control {
+
+.tab {
   padding: 10px;
   background: #5a5a5a;
   border-radius: 5px;
@@ -98,7 +104,7 @@ STATE
 
 /* Main Section of Blog */
 
-.project-header, .about-header {
+.portfolio-header, .about-header {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -112,14 +118,15 @@ STATE
   display: none;
 }
 
-.indv-port {
+#portfolio {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
   justify-content: space-around;
   color: #DDD;
 }
-.indv-port h1 {
+.project-header {
+  font-size: 1.025em;
   text-align: center;
   letter-spacing: 0.1em;
 }
@@ -149,14 +156,9 @@ STATE
   transform: rotate(.5turn);
 }
 /*ABOUT SECTION*/
-/*#about-me {
-  margin-bottom: 30px;
-}*/
-#about-me header {
+
+#about-header {
   display: flex;
-  margin-bottom: 30px;
-}
-{
   margin: 0 auto;
   font-family: 'Goudy Bookletter 1911', serif;
   color: #DDD;
@@ -186,7 +188,7 @@ STATE
   letter-spacing: 0.2em;
   background-color: #5a5a5a;
 }
-#about-body p {
+#about-body {
   display: block;
 }
 /* Footer */
