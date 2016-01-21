@@ -1,5 +1,3 @@
-var portfolio = [];
-
 function Sites (opts) {
   this.title = opts.title;  //Title of the project
   this.category = opts.category;  //Category of project HTML, CSS, JavaScript or combo
@@ -9,25 +7,52 @@ function Sites (opts) {
   this.projectImg = opts.projectImg; //Screen capture of project front page
 }
 //populating the portfolio template
-Sites.prototype.toHtml = function() {
-  var appTemplate = $('#dynamic-content').html();
-  var compiledTemplate = Handlebars.compile(appTemplate);
-  var html = compiledTemplate(this);
+// Sites.prototype.toHtml = function() {
+//   var appTemplate = $('#dynamic-content').html();
+//   var compiledTemplate = Handlebars.compile(appTemplate);
+//   var html = compiledTemplate(this);
+//
+//   return html;
+// };
+Sites.all = [];
 
-  return html;
+Sites.prototype.toHtml = function() {
+  var template = Handlebars.compile($('#dynamic-content').text());
+
+  return template(this);
 };
 
-portfolio.sort(function(a,b) {
-  return(new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
+Sites.loadAll = function(rawData) {
+  rawData.sort(function(a,b) {
+    return(new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  });
 
-projects.forEach(function(ele) {
-  portfolio.push(new Sites(ele));
-});
+  rawData.forEach(function(ele) {
+    Sites.all.push(new Sites(ele));
+  });
+};
 //writing the template to the #portfolio section
-portfolio.forEach(function(a){
-  $('#portfolio').append(a.toHtml());
-});
+// portfolio.forEach(function(a){
+//   $('#portfolio').append(a.toHtml());
+// });
+
+Sites.fetchAll = function() {
+  if (localStorage.rawData) {
+    Sites.loadAll(JSON.parse(localStorage.rawData));
+    portfolioView.initIndexPage();
+  } else {
+    $.get('data/portfolioEntries.json', function(data) {
+      Sites.loadAll(data);
+      var dataString = JSON.stringify(data);
+      localStorage.setItem('rawData', dataString);
+      portfolioView.initIndexPage();
+    });
+  }
+};
+
+
+
+
 //Adding moving directional arrow to show project body and to hide it.
 $(function() {
   $('.arrow i').on('click', function(e) {
