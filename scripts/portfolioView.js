@@ -9,6 +9,10 @@ portfolioView.handleMainMenu = function() {
   $('.menu .tab:first').click(); //first tab "clicks" when page loads
 };
 
-$(document).ready(function() {
-  portfolioView.handleMainMenu(); //runs the function upon browser load
-});
+portfolioView.initIndexPage = function() {
+  Sites.all.forEach(function(a){
+    $('#portfolio').append(a.toHtml());
+  });
+  portfolioView.handleMainMenu();
+
+};
