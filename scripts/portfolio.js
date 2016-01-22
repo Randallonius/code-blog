@@ -50,9 +50,6 @@ Sites.fetchAll = function() {
   }
 };
 
-
-
-
 //Adding moving directional arrow to show project body and to hide it.
 $(function() {
   $('.arrow i').on('click', function(e) {
