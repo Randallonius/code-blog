@@ -198,6 +198,12 @@ STATE
 }
 /* Footer */
 /*Media Queries*/
+
+@media all and (max-width: 900px) {
+  #title h1 {
+    font-size: 5em;
+  }
+}
 @media all and (max-width: 600px) {
 #portfolio.tab-content {
   flex-direction: column;
@@ -205,10 +211,4 @@ STATE
 #title h1 {
   font-size: 2em;
 }
-}
-
-@media all and (max-width: 900px) {
-  #title h1 {
-    font-size: 5em;
-  }
 }
