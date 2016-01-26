@@ -55,6 +55,6 @@ $(function() {
   $('.arrow i').on('click', function(e) {
     e.preventDefault();
     $(e.target).parent().parent().find('.project-body').slideToggle('slow');
-    $(this).toggleClass('up');
+    $(this).toggleClass('up',);
   });
 });
