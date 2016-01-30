@@ -11,10 +11,17 @@
     $('.menu .tab:first').click(); //first tab "clicks" when page loads
   };
 
-  portfolioView.initIndexPage = function() {
-    Sites.all.forEach(function(a){
-      $('#portfolio').append(a.toHtml());
+  Sites.htmlFrom = function (sites) {
+    return sites.map(function(a){
+      return a.toHtml();
     });
+  };
+
+  portfolioView.initIndexPage = function() {
+    var sites = Sites.htmlFrom(Sites.all);
+
+    $('#portfolio').append(sites);
+
     portfolioView.handleMainMenu();
 
   };
