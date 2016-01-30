@@ -47,7 +47,7 @@
         Sites.loadAll(data);
         var dataString = JSON.stringify(data);
         localStorage.setItem('rawData', dataString);
-        portfolioView.initIndexPage();
+        projectView.initIndexPage();
       });
     }
   };
