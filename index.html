@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="style/index.css">
 
 <script id="dynamic-content" type="text/x-handlebars-template">
-<div data-category="projects">
+<div data-category="projects" class="indv-projects">
     <header>
       <h1 class="project-header">{{title}}</h1>
     </header>
@@ -42,7 +42,7 @@
         </nav>
 
       <section id="portfolio" class="tab-content">
-        <h1 class="portfolio-header">Personal Projects</h1>
+        <div class="portfolio-header"><h1>Personal Projects</h1></div>
       </section>
         <section id="about" class="tab-content">
                 <h1 class="about-header">Hello!</h1>
@@ -56,11 +56,11 @@
             </section> <!--about-info-->
         </section> <!--tab-content-->
   </main>
-  <footer></footer>
+  <footer class="bottom"></footer>
   <script src="scripts/jquery-1.11.3.js"></script>
   <script src="scripts/handlebars-v4.0.5.js"></script>
   <script src="scripts/portfolio.js"></script>
   <script src="scripts/portfolioView.js"></script>
-  <script>Sites.fetchAll();</script>
+  <script>Sites.fetchAll(portfolioView.initIndexPage);</script>
   </body>
 </html>
