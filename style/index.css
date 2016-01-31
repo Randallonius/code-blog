@@ -208,6 +208,14 @@ STATE
 #portfolio.tab-content {
   flex-direction: column;
 }
+#about-info {
+  display: flex;
+  flex-direction: column;
+}
+#profile-image {
+  display: flex;
+  justify-content: center;
+}
 #title h1 {
   font-size: 2em;
 }
