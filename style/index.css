@@ -22,6 +22,10 @@ a {
   text-decoration: none;
   color: #222;
 }
+
+footer {
+  height: 50px;
+}
 /***********************
 LAYOUT
 ****************/
@@ -197,6 +201,9 @@ STATE
   display: block;
 }
 /* Footer */
+.social-media-footer {
+  display: none;
+}
 /*Media Queries*/
 
 @media all and (max-width: 900px) {
@@ -213,10 +220,24 @@ STATE
   flex-direction: column;
 }
 #profile-image {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+}
+#about-body {
+  margin: 0 auto;
+  margin-top: 20px;
 }
 #title h1 {
-  font-size: 2em;
+  font-size: 3em;
+}
+.social-media {
+  display: none;
+}
+.social-media-footer {
+  display: inline;
+  padding-right: 30px;
+}
+
+.social-media-footer li {
+  padding: 10px;
 }
 }
