@@ -86,12 +86,12 @@ a {
 	transition: width .5s ease, background-color .5s ease;
 }
 .social-button:hover {
-  color: coral;
+  color: #d45848;
   cursor: pointer;
 }
 .social-button:hover:after {
 	width: 100%;
-	background: coral;
+	background: #d45848;
 }
 .menu {
   cursor: pointer;
@@ -224,11 +224,6 @@ STATE
 }
 /*Media Queries*/
 
-@media all and (max-width: 900px) {
-  #title h1 {
-    font-size: 5em;
-  }
-}
 @media all and (max-width: 630px) {
 #portfolio.tab-content {
   flex-direction: column;
@@ -244,9 +239,7 @@ STATE
   margin: 0 auto;
   margin-top: 20px;
 }
-#title h1 {
-  font-size: 3em;
-}
+
 nav {
   flex-wrap: wrap;
 }
