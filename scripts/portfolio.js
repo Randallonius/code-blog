@@ -51,13 +51,17 @@
       });
     }
   };
-
+  function scrollToAnchor(aid){
+    var aTag = $('a[name= '+ aid +']');
+    $('html, body').animate({scrollTop: aTag.offset().top}, 'slow');
+  }
 //Adding moving directional arrow to show project body and to hide it.
   $(function() {
     $('.arrow i').on('click', function(e) {
       e.preventDefault();
       $(e.target).parent().parent().find('.project-body').slideToggle('slow');
       $(this).toggleClass('up');
+      scrollToAnchor('bottom');
     });
   });
 
