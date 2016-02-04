@@ -5,6 +5,8 @@
     Sites.fetchAll(portfolioView.initIndexPage);
 
     $('main > section').hide();
+    $('#portfolio').show();
+
   };
 
   module.portfolioController = portfolioController;

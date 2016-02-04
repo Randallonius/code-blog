@@ -1,9 +1,10 @@
 (function(module) {
   var aboutController = {};
 
-  portfolioController.index = function() {
+  aboutController.index = function() {
 
     $('main > section').hide();
+    $('#about').show();
   };
 
   module.aboutController = aboutController;

@@ -16,15 +16,21 @@
       return a.toHtml();
     });
   };
-
+//TODO: Check if #portfolio is populated if it is do nothing if not populate. Possible if else statement.
   portfolioView.initIndexPage = function() {
     var sites = Sites.htmlFrom(Sites.all);
-
+    $('#portfolio').empty();
     $('#portfolio').append(sites);
+
+  };
+
+
+
+
 
     // portfolioView.handleMainMenu();
 
-  };
+
 
   module.portfolioView = portfolioView;
 }) (window);
