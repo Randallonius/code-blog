@@ -20,4 +20,5 @@
       return repo[attr];
     });
   };
+  module.repos = repos;
 })(window);
