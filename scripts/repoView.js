@@ -12,5 +12,13 @@
     return $('<li><a href=' + repo.htmlurl + '>' + repo.name + '</a></li>');
   };
 
-  
+  repoView.index = function() {
+    cashe();
+
+    $('#about ul').append(
+      repos.all.map(render)
+    );
+  };
+
+  module.repoView = repoView;
 })(window);
