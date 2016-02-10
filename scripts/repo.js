@@ -5,7 +5,7 @@
 
   repos.repoRequest = function(callback) {
     $.ajax({
-      url: 'https://api.github.com/users/randallonius/repos',
+      url: 'github/users/randallonius/repos',
       type: 'GET',
       headers: {'Authorization': 'token ' + githubToken},
       success: function(data) {
