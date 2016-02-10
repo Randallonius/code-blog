@@ -1,7 +1,7 @@
 (function(module) {
   var repoView = {};
 
-  var cashe = function () {
+  var cache = function () {
     var $about = $('#about');
 
     $about.find('ul').empty();
@@ -9,12 +9,12 @@
   };
 
   var render = function(repo) {
-    return $('<p>Im Working!!</p>');
-    // return $('<li><a href=' + repo.htmlurl + '>' + repo.name + '</a></li>');
+    // return $('<p>Im Working!!</p>');
+    return $('<li><a href=' + repo.htmlurl + '>' + repo.name + '</a></li>');
   };
 
   repoView.index = function() {
-    cashe();
+    cache();
 
     $('#about ul').append(
       repos.all.map(render)
