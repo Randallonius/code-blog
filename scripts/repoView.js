@@ -10,7 +10,7 @@
 
   var render = function(repo) {
     // return $('<p>Im Working!!</p>');
-    return $('<li><a href=' + repo.htmlurl + '>' + repo.name + '</a></li>');
+    return $('<li class="repo"><a href=' + repo.html_url + '>' + repo.name + '</a></li>');
   };
 
   repoView.index = function() {

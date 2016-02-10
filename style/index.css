@@ -209,6 +209,7 @@ STATE
 
 #about-body {
   display: flex;
+  flex-direction: column;
   width: 60%;
   margin-left: 20px;
   padding: 20px;
@@ -216,6 +217,9 @@ STATE
   color: #DDD;
   letter-spacing: 0.2em;
   background-color: rgba(29,29,29,0.7);
+}
+.repo {
+  display: flex;
 }
 
 /* Footer */
