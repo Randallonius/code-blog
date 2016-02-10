@@ -218,6 +218,9 @@ STATE
   letter-spacing: 0.2em;
   background-color: rgba(29,29,29,0.7);
 }
+.repo {
+  display: flex;
+}
 
 /* Footer */
 .social-media-footer {
