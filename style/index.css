@@ -10,8 +10,10 @@ img {
   max-width: 100%;
 }
 
-
-
+i {
+  width: 50px;
+  text-align: center;
+}
 
 footer {
   height: 50px;
@@ -112,18 +114,6 @@ a {
 .social-media li {
   padding: 10px;
 }
-
-i {
-  width: 50px;
-  text-align: center;
-}
-/***********************
-STATE
-****************/
-
-
-
-
 
 
 
@@ -226,6 +216,13 @@ STATE
 .social-media-footer {
   display: none;
 }
+
+/***********************
+STATE
+****************/
+
+
+
 /*Media Queries*/
 
 @media all and (max-width: 630px) {
