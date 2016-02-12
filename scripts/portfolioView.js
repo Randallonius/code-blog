@@ -17,8 +17,8 @@
     });
   };
 //TODO: Check if #portfolio is populated if it is do nothing if not populate. Possible if else statement.
-  portfolioView.initIndexPage = function() {
-    var sites = Sites.htmlFrom(Sites.all);
+  portfolioView.initIndexPage = function(sitesData) {
+    var sites = Sites.htmlFrom(sitesData);
     $('#portfolio').empty();
     $('#portfolio').append(sites);
 

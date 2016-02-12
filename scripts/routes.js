@@ -1,4 +1,4 @@
-page('/', portfolioController.index);
+page('/', portfolioController.loadData, portfolioController.index);
 
 page('/about', aboutController.index);
 
