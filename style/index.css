@@ -4,7 +4,7 @@ BASE
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../images/grey-background.jpg");
+  background-color: #272727;
 }
 img {
   max-width: 100%;
@@ -23,7 +23,6 @@ LAYOUT
 ****************/
 
 #main-header {
-  height: 225px;
   background-color: rgba(29,29,29,0.7);
 }
 #title {
@@ -46,11 +45,11 @@ MODULE
 #title h2 {
   font-family: Lato, sans-serif;
   font-weight: 100;
-  font-size: 1.2em;
+  font-size: 2em;
   color: #ddd;
   text-align: center;
   letter-spacing: 0.1em;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 /*NAVIGATION AND MENU*/
 nav {
@@ -149,6 +148,9 @@ a {
   font-size: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;
+}
+.project-date {
+  text-align: center;
 }
 #project-image {
   display: flex;

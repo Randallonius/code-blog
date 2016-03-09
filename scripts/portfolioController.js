@@ -16,5 +16,6 @@
     });
   };
 
+
   module.portfolioController = portfolioController;
 }) (window);
