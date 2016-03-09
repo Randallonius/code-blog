@@ -1,13 +1,5 @@
 [
   {
-    "title":       "Early About-Me Page",
-    "category":    "HTML, CSS",
-    "publishedOn": "2015-10-22",
-    "projectUrl":  "http://randallonius.github.io/About-Me/",
-    "projectImg":  "images/about.jpg",
-    "body":        "<p>These things happen automatically. All you have to do is just let them happen. We wash our brush with odorless thinner. Lets put some happy little bushes on the other side now. There we go. Let your heart be your guide. Take your time. Speed will come later.</p>"
-  },
-  {
     "title":       "Donut Shop",
     "category":    "HTML, CSS, JavaScript",
     "publishedOn": "2015-11-15",
